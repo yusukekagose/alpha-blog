@@ -39,7 +39,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.destroy
     flash[:danger] = "ユーザー情報とユーザーの投稿は削除されました"
-    redirect_to user_path
+    redirect_to users_path
   end
 
   private
